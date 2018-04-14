@@ -1,0 +1,18 @@
+@import './sprite.scss';
+
+.box {
+    display: flex;
+    flex-direction: column;
+    .item {
+        transition: all .25s ease;
+        color: blue;
+    }
+
+    .alipay {
+        @include sprite($alipay);
+    }
+
+    .logo {
+        @include sprite($logo);
+    }
+}
